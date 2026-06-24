@@ -5,30 +5,33 @@ export default function HomePage() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative min-h-[90vh] flex items-center text-white overflow-hidden">
-        <Image 
-          src="/images/hero-bg.jpg" 
-          alt="Arlene Holland" 
-          fill 
-          priority 
-          sizes="100vw" 
-          className="object-cover object-center" 
+      <section className="relative min-h-[70vh] flex items-center text-white overflow-hidden">
+        <Image
+          src="/images/hero-hands.jpg"
+          alt="Compassionate psychiatric care"
+          fill
+          priority
+          quality={90}
+          sizes="100vw"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-dark)]/85 to-[var(--color-primary)]/75" />
-        <div className="relative max-w-5xl mx-auto px-6 text-center py-20">
-          <h1 className="text-6xl sm:text-7xl font-light tracking-tight leading-tight" style={{fontFamily: 'Cormorant Garamond, serif'}}>
-            Expert Mental Health Treatment Tailored to Your Unique Journey
-          </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto mt-6 leading-relaxed">
-            Dr. Arlene Holland provides evidence-based psychiatric care with a focus on understanding your whole story. Experience compassionate treatment that addresses not just symptoms, but the root causes of mental health challenges.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center mt-10">
-            <Link href="/contact" className="bg-white text-[var(--color-dark)] px-8 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">
-              Schedule Your Consultation
-            </Link>
-            <Link href="/services" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all">
-              Explore Our Services
-            </Link>
+        <div className="relative max-w-5xl mx-auto px-6 py-20">
+          <div className="bg-black/35 backdrop-blur-sm rounded-2xl px-8 py-10 max-w-3xl mx-auto text-center">
+            <h1 className="text-5xl sm:text-6xl font-light tracking-tight leading-tight" style={{fontFamily: 'Cormorant Garamond, serif'}}>
+              Expert Mental Health Treatment Tailored to Your Unique Journey
+            </h1>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto mt-6 leading-relaxed">
+              Arlene Holland, APRN, PMHNP-BC provides evidence-based psychiatric care with a focus on understanding your whole story. Experience compassionate treatment that addresses not just symptoms, but the root causes of mental health challenges.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center mt-10">
+              <Link href="/contact" className="bg-white text-[var(--color-dark)] px-8 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">
+                Schedule Your Consultation
+              </Link>
+              <Link href="/services" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all">
+                Explore Our Services
+              </Link>
+            </div>
           </div>
         </div>
       </section>
